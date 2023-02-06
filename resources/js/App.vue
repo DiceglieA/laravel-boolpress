@@ -1,10 +1,12 @@
 <template>
   <div>
+    <NavBar />
     <h1>Benvenuto nei post</h1>
 
     <main>
         <router-view></router-view>
     </main>
+    <FooterComp />
 
     <!-- <ol>
         <li v-for="post in arrPosts" :key="post.id">{{ post.title }}</li>
@@ -30,8 +32,15 @@
 </template>
 
 <script>
+import NavBar from './components/NavBar';
+import FooterComp from './components/FooterComp';
+
 export default {
     name: 'App',
+    components: {
+        NavBar,
+        FooterComp,
+    },
     data() {
         return {
             arrPosts: [],

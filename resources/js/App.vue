@@ -1,11 +1,16 @@
 <template>
   <div>
     <h1>Benvenuto nei post</h1>
+
+    <main>
+        <router-view></router-view>
+    </main>
+
     <!-- <ol>
         <li v-for="post in arrPosts" :key="post.id">{{ post.title }}</li>
     </ol> -->
 
-    <div class="container">
+    <!-- <div class="container">
             <h1 class="text-center">Post</h1>
             <div class="row g-3">
                 <div v-for="post in arrPosts" :key="post.id" class="col-sm-6 col-md-4">
@@ -19,7 +24,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
 
   </div>
 </template>

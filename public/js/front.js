@@ -33235,8 +33235,8 @@ new Vue({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\angel\OneDrive\Desktop\boolean\laravel\laravel-api\resources\js\front.js */"./resources/js/front.js");
-module.exports = __webpack_require__(/*! C:\Users\angel\OneDrive\Desktop\boolean\laravel\laravel-api\resources\sass\back.scss */"./resources/sass/back.scss");
+__webpack_require__(/*! C:\Users\angel\OneDrive\Desktop\boolean\laravel\laravel-boolpress\resources\js\front.js */"./resources/js/front.js");
+module.exports = __webpack_require__(/*! C:\Users\angel\OneDrive\Desktop\boolean\laravel\laravel-boolpress\resources\sass\back.scss */"./resources/sass/back.scss");
 
 
 /***/ })

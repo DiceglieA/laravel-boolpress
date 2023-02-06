@@ -8,6 +8,7 @@ import PageHome from './pages/PageHome';
 import PageAbout from './pages/PageAbout';
 import PagePost from './pages/PagePost';
 import PagePosts from './pages/PagePosts';
+import Page404 from './pages/Page404'
 
 Vue.use(VueRouter);
 
@@ -37,10 +38,11 @@ const routes = [
         path: '*',
         name: 'page404',
         component: Page404,
-    }
+    },
 ];
 
 const router = new VueRouter({
+    mode: 'history',
     routes
 })
 

@@ -1,17 +1,12 @@
 <template>
   <div>
-    <h1>Post</h1>
-    <p>
-        Lo slug: {{ slug }}
-    </p>
+    Footer
   </div>
 </template>
 
 <script>
 export default {
-    props: [
-        'slug',
-    ]
+
 }
 </script>
 

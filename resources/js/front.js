@@ -14,20 +14,30 @@ Vue.use(VueRouter);
 const routes = [
     {
         path: '/',
+        name: 'home',
         component: PageHome,
     },
     {
         path: '/about',
+        name: 'about',
         component: PageAbout,
     },
     {
         path: '/posts',
+        name: 'postsIndex',
         component: PagePosts,
     },
     {
-        path: '/posts/',
+        path: '/posts/:slug',
+        name: 'postsShow',
         component: PagePost,
+        props: true,
     },
+    {
+        path: '*',
+        name: 'page404',
+        component: Page404,
+    }
 ];
 
 const router = new VueRouter({

@@ -1,5 +1,6 @@
 <template>
-    <nav class="navbar navbar-expand-md bg-light">
+    <div>
+        <nav class="navbar navbar-expand-md bg-light">
         <div class="container-fluid">
             <router-link :to="{name: 'home'}" class="navbar-brand">Boolpress</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,7 +21,9 @@
                 </form>
             </div>
         </div>
-    </nav>
+        </nav>
+    </div>
+
 </template>
 
 <script>

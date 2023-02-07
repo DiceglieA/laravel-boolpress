@@ -1,10 +1,12 @@
 <template>
-  <div>
+  <div class="container">
     <NavBar />
     <h1>Benvenuto nei post</h1>
 
     <main>
-        <router-view></router-view>
+        <div class="container">
+            <router-view></router-view>
+        </div>
     </main>
     <FooterComp />
 
@@ -41,15 +43,6 @@ export default {
         NavBar,
         FooterComp,
     },
-    data() {
-        return {
-            arrPosts: [],
-        };
-    },
-    created() {
-        axios.get('api/posts')
-            .then(response => this.arrPosts = response.data.results);
-        }
 }
 </script>
 

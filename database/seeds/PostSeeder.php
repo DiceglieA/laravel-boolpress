@@ -17,6 +17,8 @@ class PostSeeder extends Seeder
     public function run(Faker $faker)
     {
         $categories = Category::all('id')->all();
+        $tags = Tag::all()->pluck('id');
+        $tagCount = count($tags);
 
         for ($i = 0; $i < 100; $i++) {
             $title = $faker->words(rand(3, 7), true);
